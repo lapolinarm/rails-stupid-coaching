@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <h2 class="fw-bold">Stupid Coaching</h2>
+
+  <!-- Bloque para la pregunta del usuario con barra a la izquierda -->
+  <blockquote class="blockquote" style="border-left: 5px solid #ccc; padding-left: 15px;">
+    <!-- Incrementar margen inferior para mayor espacio entre frases -->
+    <p class="mb-2"><%= @question %></p>
+    <footer class="blockquote-footer mt-2">You</footer>
+  </blockquote>
+
+  <!-- Bloque para la respuesta del coach con barra a la izquierda -->
+  <div class="alert alert-warning mt-4" role="alert" style="border-left: 5px solid #ccc; padding-left: 15px;">
+    <blockquote class="blockquote mb-0">
+      <p class="mb-2"><%= @answer %></p>
+      <footer class="blockquote-footer mt-2">Your coach</footer>
+    </blockquote>
+  </div>
+
+  <!-- Enlace sin subrayado -->
+  <p class="mt-4">
+    <%= link_to "Ask a new question", ask_path, class: "text-decoration-none" %>
+  </p>
+</div>
